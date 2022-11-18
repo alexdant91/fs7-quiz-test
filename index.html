@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+  </head>
+
+  <body>
+    <div class="scores">
+      <div>Question N: <span id="qst_num">1</span></div>
+      <div>Correct answers: <span id="correct_score">0</span></div>
+      <div>Incorrect answers: <span id="incorrect_score">0</span></div>
+    </div>
+
+    <h1>Simple Quiz</h1>
+    <div id="quiz">
+      <div id="loading" class="active">Loading...</div>
+      <h2 id="category"></h2>
+      <div id="quest-body">
+        <h2 id="question-t"></h2>
+        <p id="level"></p>
+        <div class="answers-c" id="answers-c">
+          <input type="radio" name="quiz-answer" id="a">
+          <label class="quiz-answer" id="a-text" for="a"></label>
+          <br>
+          <input type="radio" class="none" name="quiz-answer" id="b">
+          <label class="quiz-answer none" id="b-text" for="b"></label>
+          <br>
+          <input type="radio" name="quiz-answer" id="c">
+          <label class="quiz-answer" id="c-text" for="c"></label>
+          <br>
+          <input type="radio" class="none" name="quiz-answer" id="d">
+          <label class="quiz-answer none" id="d-text" for="d"></label>
+        </div>
+      </div>
+      <button id="submit" disabled="true">Submit Answer</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+
+</html>
